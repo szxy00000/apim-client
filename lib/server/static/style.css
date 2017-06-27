@@ -1,0 +1,135 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#root{
+	height: 100%;
+}
+#reg{
+	width: 500px;
+	height: 300px;
+}
+.item{
+	clear: both;
+}
+.i-title{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	float: left;
+}
+#subm, #mock-delete{
+	width: 100px;
+	height: 30px;
+	background: #3888ea;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	outline: none;
+	cursor: pointer;
+}
+.nav{
+	display: inline-block;
+	border: solid 1px #cccccc;
+	width: 450px;
+	height: 100%;
+	overflow: auto;
+	float: left;
+}
+.search-box{
+	padding: 0 20px 9px 10px;
+    border: solid 1px #ccc;
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.search-box input{
+	width: 250px;
+	height: 19px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	color: #5a5a5a;
+	margin-left: 5px;
+}
+.search-icon{
+	width: 16px;
+	height: 16px;
+	background: url(data:image/png;base64,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);
+	background-size: 16px 16px;
+	display: inline-block;
+	margin-top: 6px;
+}
+.hide{
+	display: none;
+}
+.schema-list .schema{
+	padding: 5px 10px;
+}
+a{
+	color: #268bd2;
+}
+a.cur{
+	color: #e26f34;
+}
+a.selected{
+	color: #ff0000;
+}
+a.delete{
+	margin-left: 5px;
+	color: red;
+}
+.add-button{
+	background: #63a2ef;
+	color: #fff;
+	border-radius: 3px;
+	padding: 3px 10px;
+	cursor: pointer;
+}
+#schema-content{
+	border: solid 1px #ccc;
+	position: absolute;
+	right: 0;
+    left: 450px;
+    bottom: 0;
+    top: 0;
+    padding: 10px;
+}
+.title-wrap{
+	float: left;
+	margin-right: 10px;
+}
+.title-wrap span {
+	font-size: 12px;
+	text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #3b7343;
+}
+#mock-data{
+	clear: both;
+}
+.mock-wrap{
+	height: 30px;
+	margin-top: 10px;
+}
+.schema-detail {
+	color: #3b7343;
+	height: 30px;
+	line-height: 30px;
+}
+.mock-area{
+	width: 500px;
+	height: 300px;
+	overflow: auto;
+	transition: display 2s;
+}
+

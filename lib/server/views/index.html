@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>{{ title }}</title>
+  	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div id="root">
+	<div class="nav">
+		<div class="search-wrap">
+			<span class="search-box">
+				<em class="search-icon"></em>
+				<input type="text" id="search" autocomplete="off"/>
+			</span>
+			<span class="add-button" id="add-new-schema">添加</span>
+		</div>
+		<div class="schema-list">
+			{% for one in schema %}
+				<div class="schema">接口：<a href="javascript:;" class="paths">{{one.path}}</a>{% if one.myData %}<a class="delete" href="javascript:;" data-path="{{ one.path }}">删除</a>{% endif %}</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div id="schema-content">
+		
+	</div>
+	<!-- <div class="item">
+		<span class="i-title">mock格式：</span>
+		<select id="type">
+			<option value="1" {% if schema.mocks.succssResponse == 1 %} selected="selected" {% endif %}>JSON</option>
+			<option value="2" {% if schema.mocks.succssResponse == 2 %} selected="selected" {% endif %}>Mock.js</option>
+			<option value="3" {% if schema.mocks.succssResponse == 3 %} selected="selected" {% endif %}>function</option>
+		</select>
+	</div>
+	<div class="item">
+		<span class="i-title">接口路径：</span>
+		<input id="path" type="text"/>
+	</div>
+	<div class="item">
+		<span class="i-title">mock：</span>
+		<textarea id="reg"></textarea>
+	</div>
+	<div class="item">
+		<button id="subm">提交</button>
+	</div> -->
+
+</div>
+<script src="jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
