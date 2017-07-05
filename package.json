@@ -1,6 +1,6 @@
 {
   "name": "apim-client",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "APIM Client",
   "main": "index.js",
   "keywords": [
@@ -8,6 +8,7 @@
     "mock"
   ],
   "scripts": {
+    "demo": "node ./example/demo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,7 @@
     "express": "^4.15.3",
     "mockjs": "^1.0.1-beta3",
     "request": "^2.81.0",
+    "shelljs": "^0.7.8",
     "swig": "^1.4.2"
   }
 }

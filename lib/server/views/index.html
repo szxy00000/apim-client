@@ -16,7 +16,7 @@
 		</div>
 		<div class="schema-list">
 			{% for one in schema %}
-				<div class="schema">接口：<a href="javascript:;" class="paths">{{one.path}}</a>{% if one.myData %}<a class="delete" href="javascript:;" data-path="{{ one.path }}">删除</a>{% endif %}</div>
+				<div class="schema">接口({% if one.myData %}本地{% else %}平台{% endif %})：<a href="javascript:;" class="paths">{{one.path}}</a>{% if one.myData %}<a class="delete" href="javascript:;" data-path="{{ one.path }}">删除</a>{% endif %}</div>
 			{% endfor %}
 		</div>
 	</div>

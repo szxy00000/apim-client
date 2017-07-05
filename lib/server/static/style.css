@@ -52,7 +52,7 @@ body{
     border-radius: 5px;
 }
 .search-box input{
-	width: 250px;
+	width: 270px;
 	height: 19px;
 	border: none;
 	outline: none;
@@ -77,10 +77,10 @@ body{
 a{
 	color: #268bd2;
 }
-a.cur{
+.cur{
 	color: #e26f34;
 }
-a.selected{
+.selected{
 	color: #ff0000;
 }
 a.delete{
@@ -132,4 +132,7 @@ a.delete{
 	overflow: auto;
 	transition: display 2s;
 }
-
+.annotation{
+	font-size: 12px;
+	color: #928e8e;
+}

@@ -10,6 +10,11 @@
 	name: {{data.name}}
 	<input type="hidden" value="{{data.name}}" id="schema-name">
 </div>
+<br/>
+<div class="annotation">
+	<span class="selected">红色</span>字体为当前使用mock，双击切换&nbsp;&nbsp;
+	<span class="cur">橙色</span>字体为正在查看mock，单机切换
+</div>
 <div class="mock-wrap">
 	<span id="mock-title">
 		{% for key, mock in data.mocks %}
@@ -24,7 +29,7 @@
 	</span>
 	<a href="javascript:;" id="a-mock-成功" {% if data.unChoiced %}class="cur selected"{% endif %}>随机</a>
 	<input type="text" id="new-mock" style="display: none;">
-	<span class="add-button" id="add-mock">添加</span>&nbsp;#红色选项为当前使用mock，双击选择切换
+	<span class="add-button" id="add-mock">添加</span>&nbsp;
 </div>
 <div id="mock-data">
 	{% for key, mock in data.mocks %}
